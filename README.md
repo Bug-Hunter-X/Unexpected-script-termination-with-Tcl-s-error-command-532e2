@@ -1,0 +1,3 @@
+This example demonstrates an uncommon issue in Tcl where the error command terminates the script unexpectedly.  The `check_if_exists` procedure intends to check for the existence of a file and gracefully handle the case where the file doesn't exist. However, using error results in script termination, rather than just an error message.
+
+The solution shows how to use try-catch to handle potential errors and allow the script to continue execution even if a file is not found.
